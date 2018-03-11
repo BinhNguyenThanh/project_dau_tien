@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "Trangchu1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <link href="~/Content/css/trangchu.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<div class="Group1">
+    <div class="col-md-12">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="~/Content/img/giaodien/anhnendulich.jpg" style="width:100%; height:500px ">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="~/Content/img/giaodien/anhdulich.jpeg" style="width:100% ; height:500px">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="~/Content/img/giaodien/phu-quoc.jpg" style="width:100% ; height:500px">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="~/Content/img/giaodien/bien.jpg" style="width:100% ; height:500px">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="~/Content/img/giaodien/Khachsan.jpg" style="width:100% ; height:500px">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script>
+ //cài đặt chạy slide
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1500); // Change image every 2 seconds   //kết thúc cài đặt slide
+}
+    </script>
+</div>
+
+
+<div class="col-md-12"><center><h1 style="color:green; text-decoration:none;">ƯU ĐÃI NHẤT</h1></center></div>
+<div class="col-md-12"><center><img src="~/Content/img/giaodien/hinhanhcat/cba.png"></center></div>
+
+<div id="hinh3">
+    <div class="col-md-12" style="margin-top: 40px;">
+        <div class="col-md-6">
+
+
+
+
+
+            <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+                <img src="~/Content/img/giaodien/hinhanhcat/mocchau1.jpg">
+            </div>
+            <div class="col-md-7" style=" height: 200px;;">
+                <h4>HOA ĐÀO SAPA</h4>
+                <p>Giữa tháng 3, du khách lên vùng cao Sa Pa, Bát Xát sẽ có cơ hội ngắm những gốc đào cổ thụ đua nhau nở rộ, đỏ thắm trên những ngọn núi cao hay các bản làng.Hoa đào phai nở muộn khiến vùng cao Bát Xát vẫn tràn đầy sức xuân.Vẻ đẹp mang đậm vùng cao Tây Bắc.Du khách lên vùng cao thời điểm này sẽ được ngắm hoa đào nở đẹp nhất.</p>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+                <img src="~/Content/img/giaodien/hinhanhcat/dir.jpg">
+            </div>
+            <div class="col-md-7" style=" height: 200px;">
+                <h4>RUỘNG BẬC THANG</h4>
+                <p>Đây là mùa đẹp nhất ở vùng núi cao Sa Pa, Lào Cai. Những cánh đồng ruộng bậc thang như những chiếc thang trời ở các bản làng Trung Chải, Sa Pả, Tả Phìn, Lao Chải, Nậm Cang, Tả Van, Hầu Thào..., luôn là điểm đến hấp dẫn đối với du khách trong và ngoài nước</p>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="hinh4">
+    <div class="col-md-12" style="margin-top: 40px;">
+        <div class="col-md-6">
+            <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+                <img src="~/Content/img/giaodien/hinhanhcat/abcr.jpg">
+            </div>
+            <div class="col-md-7" style=" height: 200px;;">
+                <h4>HỘI AN</h4>
+                <p>Ngoài những giá trị văn hoá qua kiến trúc đa dạng, Hội An còn lưu giữ một nền tảng văn hoá phi vật thể khá đồ sộ. Cuộc sống thường nhật của cư dân với những phong tục tập quán, sinh hoạt tín ngưỡng, nghệ thuật dân gian, lễ hội văn hoá cùng với cảnh quan thiên nhiên thơ mộng, các món ăn đặc sản… làm cho Hội An ngày càng hấp dẫn du khách thập phương.</p>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+                <img src="~/Content/img/giaodien/hinhanhcat/lge.jpg">
+            </div>
+            <div class="col-md-7" style=" height: 200px;">
+                <h4>MÙA ĐÔNG MỘC CHÂU</h4>
+                <p>Ở MỘC CHÂU người ta chồng cải để thu hoạch hạt cải già bán cho các cơ sở ép dầu,bất cứ chỗ nào có đất là người ta gieo.Chính vì vậy khi nở hoa cải sẽ bung ra hàng loạt theo từng cánh đồng,biến nơi đây trở thành 1 thiên đường đúng nghĩa giữa lưng chừng mây vậy</p>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-12" style="margin-top: 30px;">
+    <div class="col-md-6">
+        <div class="anhto1">
+            <a href="#"><img src="~/Content/img/giaodien/nhatrang.jpg" style="margin-top:20px ; width:682px ;height: 428px "></a>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="anhto2" style="margin-top:20px">
+            <center><h1 style="color:green;"> DỊCH VỤ</h1></center>
+            <div class="dichvu1">
+                <div class="hinhdv1">
+                    <div class="hadv"><center><img src="~/Content/img/giaodien/hinhanhcat/discver.png"></center></div>
+                    <div class="ttdv">
+                        <p>Luôn có những lịch trình mới và hấp dẫn dành cho các bạn.Không phải lo về thời gian lịch trình làm ảnh hưởng tới công việc.</p>
+                    </div>
+                </div>
+                <div class="hinhdv1">
+                    <div class="hadv"><center><img src="~/Content/img/giaodien/hinhanhcat/disc.png"></center></div>
+                    <div class="ttdv">
+                        <p>Nếu có rắc rối,bạn có thể đổi ngay lịch trình mới của chứng tôi để phù hợp.Chúng tôi luôn giúp đỡ bạn hết mình,để bạn có những phút giây thư giãn nhất</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dichvu2">
+                <div class="hinhdv1">
+                    <div class="hadv"><center><img src="~/Content/img/giaodien/hinhanhcat/dir.png"></center></div>
+                    <div class="ttdv">
+                        <p>Những địa điểm cuốn hút của chúng tôi luôn có những món ăn hấp dẫn.Và tất nhiên rồi,Mọi đặc sản ở đó,chúng tôi đẩm bảo với bạn là vô cùng an toàn.</p>
+                    </div>
+                </div>
+                <div class="hinhdv1">
+                    <div class="hadv"><center><img src="~/Content/img/giaodien/hinhanhcat/disr.png"></center></div>
+                    <div class="ttdv">
+                        <p>Chúng tôi cung cấp những dịch vụ khách sạn tuyệt vời nhất,sang trọng nhất với giá phải chăng.An ninh luôn được đảm bảo.Quý khách hàng sẽ vô cùng yên tâm với dịch vụ của chúng tôi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="Group3" style="overflow:hidden;">
+    <div>
+        <div class="col-md-12"><center><h2 style="color:green;">TOUR</h2></center></div>
+        <div class="col-md-12"><center><img src="~/Content/img/giaodien/hinhanhcat/cba.png"></center></div>
+    </div>
+</div>
+
+<div class="Group4">
+    @Html.Partial("~/Views/SanPham/dsachSp.cshtml")
+
+</div>
+

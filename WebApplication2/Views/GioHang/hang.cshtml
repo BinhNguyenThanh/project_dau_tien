@@ -1,0 +1,105 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đặt Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style2.css">
+    <link rel="shortcut icon" href="~/Content/img/Images/favicon.ico" />
+    <!-- jQuery library -->
+    <script src="Asset/js/jquery-3.1.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/script2.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+
+<body>
+    <section class="container">
+        <div>
+            <ol class="breadcrumb">
+                <li><a href="#">Trang chủ</a></li>
+                <li class="active">Giỏ hàng</li>
+            </ol>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center">Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Chi tiết</th>
+                        <th>Số lượng</th>
+                        <th>Chỉnh sửa</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center"><img src="~/Content/img/giaodien/dulichnhatrang.jpg" alt="" width="50px" height="50px"></td>
+                        <td>Nha Trang</td>
+                        <td>Nha Trang: Thuộc tỉnh Bà Rịa - Vũng Tàu...</td>
+                        <td><input type="number" name="qty" value="1" class="center-block"></td>
+                        <td class="text-center">
+                            <a href=""><img src="~/Content/img/Images/update.png" alt=""></a>
+                            <a href=""><img src="~/Content/img/Images/remove.png" alt=""></a>
+                        </td>
+                        <td>4.000.000 VND</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container">
+        <div class="col-md-7 hidden-xs">
+
+        </div>
+        <div class="col-md-5">
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th>Số lượng:</th>
+                    <th class="text-center">1</th>
+                </tr>
+                <tr>
+                    <th>Đơn giá:</th>
+                    <th class="text-center">4.000.000 VND</th>
+                </tr>
+                <tr>
+                    <th>VAT(10%):</th>
+                    <th class="text-center">400.000 VND</th>
+                </tr>
+                <tr>
+                    <th><span>Thanh toán:</span></th>
+                    <th class="text-center"><span>4.400.000 VND</span></th>
+                </tr>
+            </table>
+            <div class="pull-right">
+                <a href="index.html" title=""><button type="button" class="btn btn-warning continue-shopping">Tiếp tục mua hàng</button></a>
+                <a href="thanhtoan.html" title=""><button type="button" class="btn btn-warning check-out">Thanh toán</button></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer1">
+        <div class="container">
+            <div class="col-md-4">
+                <span>LIÊN HỆ VỚI CHÚNG TÔI</span>
+                <a href="" title=""><img src="Asset/Images/logo14.png" alt=""></a>
+                <a href="" title=""><img src="Asset/Images/logo17.png" alt=""></a>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <div class="input-group">
+                    <input name="subcribe" type="text" class="form-control" placeholder="Đăng ký nhận khuyến mại">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">ĐĂNG KÝ</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>

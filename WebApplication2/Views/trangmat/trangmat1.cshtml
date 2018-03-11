@@ -1,0 +1,222 @@
+﻿
+@{
+    ViewBag.Title = "trangmat1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head><link href="~/Content/css/trangmat.css" rel="stylesheet" type="text/css" media="all" /></head>
+<div class="col-md-12">
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="~/Content/img/giaodien/anhtuantrangmat1.jpg" style="width:100%; height:500px ">
+        <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/Content/img/giaodien/anhtuantrangmat4.jpg" style="width:100% ; height:500px">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/Content/img/giaodien/anhtuantrangmat3.jpg" style="width:100% ; height:500px">
+        <div class="text">Caption Three</div>
+    </div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+        </div>
+<script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 1500); // Change image every 2 seconds
+            }
+</script>
+<div class="col-md-12"><center><h2 style="color: #22a227; font-family: 'sofia' ; ">Những tour du lịch tuần trăng mật</h2> </center></div>
+<div class="a">
+    <ul>
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/thailan.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR THÁI LAN</p></center>
+                <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:25/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/maylaysia.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR MALAYSIA</p></center>
+                <h5 style="color:#2496cc">GIÁ:25,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 5 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:23/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/nuiphusi.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR NHẬT BẢN</p></center>
+                <h5 style="color:#2496cc">GIÁ:30,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:13/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/ando.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR ẤN ĐỘ</p></center>
+                <h5 style="color:#2496cc">GIÁ:50,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:30/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/aicap.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR AI CẬP</p></center>
+                <h5 style="color:#2496cc">GIÁ:150,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:24/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+        </div>
+
+
+    </ul>
+</div>
+<div class="b">
+    <ul>
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/trungquoc.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR TRUNG QUỐC</p></center>
+                <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:26/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/vungtau.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR VŨNG TÀU</p></center>
+                <h5 style="color:#2496cc">GIÁ:120,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:19/6/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/quangnamm.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR QUẢNG NAM</p></center>
+                <h5 style="color:#2496cc">GIÁ:22,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 4 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:26/07/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+
+
+
+    </ul>
+</div>
+<div class="c">
+    <ul>
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/phap.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR PHÁP</p></center>
+                <h5 style="color:#2496cc">GIÁ:220,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 5 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:20/07/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/hoaky.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR HOA KỲ</p></center>
+                <h5 style="color:#2496cc">GIÁ:200,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:02/07/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/dubai.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR DUBAI</p></center>
+                <h5 style="color:#2496cc">GIÁ:225,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 5 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:10/07/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <li><a href="#"><img src="~/Content/img/giaodien/uc.jpg" style=" margin-top: 100px;  height: 258px; width:297px;"></a></li>
+            <div style=" background-color: #f7f7f7; ">
+                <center><p style=" color: #e91e63; font-weight:">TOUR ÚC</p></center>
+                <h5 style="color:#2496cc">GIÁ:322,000,000 vnđ</h5>
+                <h5 style=" color: #2496cc ">THỜI GIAN: 7 Ngày</h5>
+                <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:15/07/2017</h5>
+                <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+            </div>
+
+        </div>
+    </ul>
+</div>
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a class="active" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+

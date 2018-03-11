@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "dsachSp";
+}
+@using WebApplication2.Models.CSDL;
+@model IEnumerable<Tour>
+<ul>
+    @foreach (Tour dt in Model)
+    {
+    <div class="col-md-3">
+        <li>
+            <a href="tourNhatrang.html">
+                <img src="~/Content/img/giaodien/@dt.Anh" style="    height: 225px;
+    width: 297px ">
+            </a>
+        </li>
+        <div style=" background-color: #f7f7f7; ">
+            <center><p style=" color: #e91e63; font-weight:">@dt.TenTour</p></center>
+            <h5 style="color:#2496cc">GIÁ:@dt.Gia</h5>
+            <h5 style=" color: #2496cc ">Địa Chỉ Tour :@dt.DiaChiTour</h5>
+            <h5 style=" color: #2496cc ">Dự kiến khởi hành:@dt.NgayKhoiHanh</h5>
+            <center><button style="color: white; background-color: #00BCD4; font-weight: ">@Html.ActionLink("XEM THÊM","cttour","chitiettour")</button></center>
+        </div>
+    </div>
+    }
+    @*<div class="col-md-3">
+        <li>
+            <a href="#">
+                <img src="" style=" height: 225px;
+    width: 297px;">
+            </a>
+        </li>
+        <div style=" background-color: #f7f7f7; ">
+
+            <center><p style=" color:#e91e63 ; font-weight:  "></p></center>
+            <h5 style=" color: #2496cc"></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+        </div>
+    </div>*@
+    @*<div class="col-md-3">
+        <li>
+            <a href="#">
+                <img src="" style=" height: 225px;
+    width: 297px;">
+            </a>
+        </li>
+        <div style=" background-color: #f7f7f7; ">
+            <center><p style=" color: #e91e63; font-weight:"></p> </center>
+            <h5 style=" color: #2496cc"></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+        </div>
+    </div>*@
+    @*<div class="col-md-3">
+        <li>
+            <a href="#">
+                <img src="" style=" height: 225px;
+    width: 297px;">
+            </a>
+        </li>
+        <div style=" background-color: #f7f7f7; ">
+            <center><p style=" color: #e91e63; font-weight:"></p></center>
+            <h5 style=" color: #2496cc"></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <h5 style=" color: #2496cc "></h5>
+            <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+        </div>
+    </div>*@
+</ul>

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "giohang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container">
+    <div>
+        <ol class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="active">Giỏ hàng</li>
+        </ol>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Chi tiết</th>
+                    <th>Số lượng</th>
+                    <th>Chỉnh sửa</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><img src="~/Content/img/giaodien/dulichnhatrang.jpg" alt="" width="50px" height="50px"></td>
+                    <td>Nha Trang</td>
+                    <td>Nha Trang: Thuộc tỉnh Bà Rịa - Vũng Tàu...</td>
+                    <td><input type="number" name="qty" value="1" class="center-block"></td>
+                    <td class="text-center">
+                        <a href=""><img src="~/Content/img/Images/update.png" alt=""></a>
+                        <a href=""><img src="~/Content/img/Images/remove.png" alt=""></a>
+                    </td>
+                    <td>4.000.000 VND</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="container">
+    <div class="col-md-7 hidden-xs">
+
+    </div>
+    <div class="col-md-5">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Số lượng:</th>
+                <th class="text-center">1</th>
+            </tr>
+            <tr>
+                <th>Đơn giá:</th>
+                <th class="text-center">4.000.000 VND</th>
+            </tr>
+            <tr>
+                <th>VAT(10%):</th>
+                <th class="text-center">400.000 VND</th>
+            </tr>
+            <tr>
+                <th><span>Thanh toán:</span></th>
+                <th class="text-center"><span>4.400.000 VND</span></th>
+            </tr>
+        </table>
+        <div class="pull-right">
+            <a href="index.html" title=""><button type="button" class="btn btn-warning continue-shopping">Tiếp tục mua hàng</button></a>
+            <a href="thanhtoan.html" title=""><button type="button" class="btn btn-warning check-out">Thanh toán</button></a>
+        </div>
+
+    </div>
+</section>
+
+
+
