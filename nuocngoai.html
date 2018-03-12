@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=""></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    * {box-sizing:border-box}
+    	body{
+		padding:0px;
+	    margin:0px;
+	    
+	}
+
+	
+#menu {
+    padding-top: 10px;
+    height: 97px;
+    width: 100%;
+  display: block;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+  }
+
+  #menu1
+     {
+     float:left;
+     text-align:center;
+     padding-bottom:35px;
+     padding-left: 35px;
+     margin-top: 20px;
+    }
+     #menu2{
+     overflow:hidden;
+       margin-top: 36px;
+     }
+      #menu ul{
+     list-style-type:none;
+     margin: 0;
+  padding: 0;
+     }     
+     #menu ul li
+     {
+     line-height:28px;
+     text-align:center;
+     padding-right:30px;
+     padding-top:4px;
+     padding-left: 28px;
+     list-style:none inside;
+  width: auto;
+  float: left; 
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+     }
+    
+     #menu ul li a
+     {
+      font-family: 'Arizonia';
+     text-decoration:none;
+     color:black;
+       text-transform: uppercase;
+         white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+         padding: 0 10px;
+        text-transform: uppercase;  
+        display: block;
+     }
+     #menu ul li a:hover{
+      color: white;
+      background-color: #85d486;
+     }
+       
+       .mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+	padding-top: 90px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	   
+
+.A ul li{
+	list-style: none;
+}
+
+.B ul li {
+	list-style: none;
+}
+.C ul li {
+	list-style: none;
+}
+
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+    </style>
+
+</head>
+<body>
+<div class="col-md-12">
+	<div id="menu">
+	    <div class="col-md-3">
+		<div id="menu1">
+			<center><img src="img\giaodien\hinhanhcat\discover.png"></center>
+		</div>
+		</div>
+		<div class="col-md-9">
+		<div id="menu2">
+				<ul>
+				  <li><a href="trangchu.html"><b> TRANG CHỦ</b></a></li>
+				  <li><a href="trangmat.html"><b> TOUR TRĂNG MẬT</b></a></li>
+				  <li><a href="trongnuoc.html"><b>TOUR TRONG NƯỚC</b></a></li>
+				  <li><a href="nuocngoai.html"><b>TOUR NƯỚC NGOÀI</b></a></li>
+				  <li><a href="#"><b>LIÊN HỆ</b></a></li>
+				</ul>
+		</div>
+		</div>
+    </div>
+	</div>
+
+
+
+
+<div class="col-md-12">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img\giaodien\newzealan.jpg" style="width:100%; height:500px ">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img\giaodien\du-lich-singapore-gia-re.jpg" style="width:100% ; height:500px">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img\giaodien\11_07_18-bcp_ft_australia-3_17191420.jpg" style="width:100% ; height:500px">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+</script>
+
+<div class="col-md-12"><center><h2 style="color: #22a227; font-family: 'sofia' ; ">Những tour du lịch nước ngoài</h2> </center></div>
+
+<div class="A">
+	<ul>
+		<div class="col-md-3"><li><a href="#"><center><img src="img\giaodien\SOEUL.jpg" style=" margin-top: 100px;  height: 258px; width:297px;" ></center></a></li>
+          <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR SOEUL-HÀN QUỐC</p></center>
+       <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:20/6/2017</h5>
+     <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+
+		 <div class="col-md-3"><li><a href="#"><center><img src="img\giaodien\tf_160811_Grand-Palace.jpg"  style=" margin-top: 100px; width: 297px; height: 258px; "></center></a></li>
+<div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR THÁI LAN</p></center>
+       <h5 style="color:#2496cc">GIÁ:12,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 4 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:17/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+		 <div class="col-md-3"><li><a href="#"> <img src="img\giaodien\Mexico.jpg" style=" margin-top: 100px; width: 297px; height: 258px; " ></a></li>
+          <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR MEXICO</p></center>
+       <h5 style="color:#2496cc">GIÁ:22,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 5 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:18/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+          </div>
+		 </div>
+
+		  <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\sigapo.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR SINGAPO</p></center>
+       <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:21/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+	 
+	</ul>
+</div>
+
+<div class="B">
+	<ul>
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\PlomPenh.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR PLOMPHENH</p></center>
+       <h5 style="color:#2496cc">GIÁ:12,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:19/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+
+		  <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\Shwedagon-Golden rock.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR MYANMA</p></center>
+       <h5 style="color:#2496cc">GIÁ:11,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:22/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\chicago.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR CHICAGO-MỸ</p></center>
+       <h5 style="color:#2496cc">GIÁ:74,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 2 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:18/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+		  <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\tf_160203_Thiên-An-Môn.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR THIÊN AN MÔN-TQ</p></center>
+       <h5 style="color:#2496cc">GIÁ:15,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:18/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+
+	</ul>
+</div>
+
+
+<div class="C">
+	<ul>
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\NhatBan.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR NHẬT BẢN</p></center>
+       <h5 style="color:#2496cc">GIÁ:17,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:18/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\tf_150121_Cuba 1.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR MEXICO</p></center>
+       <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:15/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\tf_160310_tour-du-lich-hong-kong-3.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR HONGKONG</p></center>
+       <h5 style="color:#2496cc">GIÁ:18,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:16/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\tf_151111_cappadocia1.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR THỔ NHĨ KÌ</p></center>
+       <h5 style="color:#2496cc">GIÁ:18,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:24/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+
+	</ul>
+</div>
+	
+
+
+	<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a  href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+<div class="col-md-12" style=" background-color: #f7f7f7" >
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU Á</a></h5></center>
+    <center><a href="#"><p> Du lich Việt Nam</p></a></center>
+    <center><a href="#"><p> Du lich Nhật Bản</p></a></center>
+    <center><a href="#"><p> Du lich Hàn Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Trung Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Thái Lan</p></a></center>
+    <center><a href="#"><p> Du lich Indonexia</p></a></center>
+    <center><a href="#"><p> Du lich Malayxia</p></a></center>
+  </div>
+  
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU ÂU</a></h5></center>
+    <center><a href="#"><p> Du lich Pháp</p></a></center>
+    <center><a href="#"><p> Du lich Thụy Sĩ</p></a></center>
+    <center><a href="#"><p> Du lich Ý</p></a></center>
+    <center><a href="#"><p> Du lich Vatican</p></a></center>
+    <center><a href="#"><p> Du lich Monaco</p></a></center>
+    <center><a href="#"><p> Du lich Bỉ</p></a></center>
+    <center><a href="#"><p> Du lich Hà Lan</p></a></center>
+  </div>
+
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU PHI </a></h5></center>
+    <center><a href="#"><p> Du lich Nam Phi  </p></a></center>
+    <center><a href="#"><p> Du lich Kenya </p></a></center>
+    <center><a href="#"><p> Du lich Mauritius </p></a></center>
+    <center><a href="#"><p> Du lich Cape Town </p></a></center>
+    <center><a href="#"><p> Du lich Pretoria </p></a></center>
+    <center><a href="#"><p> Du lich Abu Dhabi </p></a></center>
+    <center><a href="#"><p> Du lich Johannesburg</p></a></center>
+  </div>
+
+   <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU MỸ</a></h5></center>
+    <center><a href="#"><p> Du lich Mỹ</p></a></center>
+    <center><a href="#"><p> Du lich Canada</p></a></center>
+    <center><a href="#"><p> Du lich Brazil</p></a></center>
+    <center><a href="#"><p> Du lich Cuba</p></a></center>
+    <center><a href="#"><p> Du lich Mexico</p></a></center>
+    <center><a href="#"><p> Du lich Nam Mỹ</p></a></center>
+    
+  </div>
+
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU ÚC</a></h5></center>
+    <center><a href="#"><p> Du lich New Zealand</p></a></center>
+    <center><a href="#"><p> Du lich ÚC</p></a></center>
+    <center><a href="#"><p> Du lich Sydney</p></a></center>
+    
+  </div>
+</div>
+
+<div class="menuphu">
+   	<div class="col-md-12" style="background-color: darkblue; margin-top: 20px; ">
+   		<div class="col-md-3">
+   			<center><a href="#"><h5 style="color: white; ">ƯU ĐÃI NHẤT</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#"><h5 style="color: white; ">DỊCH VỤ</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#" style="color: white; "><h5>KHÁCH SẠN</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#" style="color: white; "><h5>ẨM THỰC</h5></a></center>
+   		</div>
+   	</div> 
+   </div>
+
+<div class="col-md-12" style="background-color: rgba(162, 184, 214, 0.47); color: #337ab7;padding-top: 30px;">
+
+    <div class="col-md-4">
+      <div class="lienhe">
+        <center><img src="img\giaodien\hinhanhcat\discover.png"/></center>
+        <br>
+       <p>Đến với chúng tôi,bạn sẽ được tận hưởng những dịch vụ du lịch tốt nhất cùng gia đình và người thân yêu.Đối với chúng tôi,mỗi khách hàng đề là thượng đế.Hãy để chúng tối nâng niu những phút giây thư giãn của bạn</p>
+         <p><a href="#"><img src="img\giaodien\hinhanhcat\discove.png" ></a>Tam Trinh-Hoàng Mai-Hà Nội</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\discr.png"></a>+08 0123 456 789</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\hahar.png" ></a>discovertravel@gmail.com</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\dver.png"></a>discovertravel@world.com</p>
+      </div>
+    </div>
+
+
+   <div class="col-md-4">
+     <div class="gioithieu">
+        <br>
+       <center><h5><a href="#"> THÔNG TIN CẦN BIẾT </a></h5></center>
+       <br>
+       <br>
+       <p><a href="#">Điều khoản và điều kiện</a></p>
+       <br>
+       <p><a href="#">Chính sách riêng tư</a></p>
+       <br>
+       <p><a href="#">Câu hỏi thường gặp</a></p>
+     </div>
+   </div>
+
+
+   <div class="col-md-4">
+     <div class="phanhoi">
+        <br>
+       <center><h5> LIÊN HỆ</h5></center>
+        <form role="form" style="width: 50%;margin: auto;">
+  <div class="form-group">
+    <label>Họ và Tên</label>
+    <input type="text" name="ten" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Nội Dung</label>
+    <input type="text" name="noidung" class="form-control">
+  </div>
+  
+  <input type="submit" class="btn btn-primary" value="Gửi">
+</form>
+     </div>
+   </div>
+
+
+</body>
+</html>
