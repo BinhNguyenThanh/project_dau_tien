@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=""></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style type="text/css">
+	
+	body{
+		padding:0px;
+	    margin:0px;
+	}
+
+	#menu {
+		padding-top: 10px;
+		height: 97px;
+		width: 100%;
+  display: block;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+	}
+
+	#menu1
+	   {
+	   float:left;
+	   text-align:center;
+	   padding-bottom:35px;
+	   padding-left: 35px;
+	   margin-top: 20px;
+	  }
+	   #menu2{
+	   overflow:hidden;
+       margin-top: 36px;
+	   }
+	    #menu ul{
+	   list-style-type:none;
+	   margin: 0;
+  padding: 0;
+	   }	   
+	   #menu ul li
+	   {
+	   line-height:28px;
+	   text-align:center;
+	   padding-right:30px;
+	   padding-top:4px;
+	   padding-left: 28px;
+	   list-style:none inside;
+  width: auto;
+  float: left; 
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+	   }
+	  
+	   #menu ul li a
+	   {
+	   	font-family: 'Arizonia';
+	   text-decoration:none;
+	   color:black;
+	     text-transform: uppercase;
+         white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+         padding: 0 10px;
+        text-transform: uppercase;  
+        display: block;
+	   }
+	   #menu ul li a:hover{
+	   	color: white;
+	   	background-color: #85d486;
+	   }
+       
+       .menuthang {
+    width: 200px;
+}
+
+.menuthang a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menuthang a:hover {
+    background-color: #ccc;
+}
+
+.menuthang a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+
+</head>
+<body>
+<div class="col-md-12">
+  <div id="menu">
+      <div class="col-md-3">
+    <div id="menu1">
+      <center><img src="img\giaodien\hinhanhcat\discover.png"></center>
+    </div>
+    </div>
+    <div class="col-md-9">
+    <div id="menu2">
+        <ul>
+          <li><a href="C:\Users\BINH\Desktop\bài tập thử nhiệm\new1.html"><b> TRANG CHỦ</b></a></li>
+          <li><a href="C:\Users\BINH\Desktop\bài tập thử nhiệm\tour trăng mật.html"><b> TOUR TRĂNG MẬT</b></a></li>
+          <li><a href="C:\Users\BINH\Desktop\bài tập thử nhiệm\tourtrongnuoc.html"><b>TOUR TRONG NƯỚC</b></a></li>
+          <li><a href="C:\Users\BINH\Desktop\bài tập thử nhiệm\tournuocngoai.html"><b>TOUR NƯỚC NGOÀI</b></a></li>
+          <li><a href="#"><b>LIÊN HỆ</b></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-12">
+    	<div class="hinhanh">
+    		<center><img src="img\giaodien\anhnendulich.jpg" style="width: 100%; "></center>
+    	</div>
+    </div>
+
+<div class="col-md-12" style="margin-top: 30px; ">
+    <div class="col-md-2">
+    	<div class="menuthang">
+              <a href="#" class="active">Nha Trang-Vinpeal</a>
+              <a href="#">Nha Trang-Phú Quốc</a>
+              <a href="#">Nha Trang-Dốc Lết</a>
+              <a href="#">Nha Trang-Đà Nẵng</a>
+              <a href="#">Nha Trang-Huế</a>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+    	<h4 style="font-weight: bold;color: brown; ">LỊCH TRÌNH TOUR</h4>
+    	<p style="font-weight: bold; ">Nha Trang - Nghỉ dưỡng Vinpearl Resort 5* (Máy Bay. Đã bao gồm vé tham quan khu vui chơi)</p>
+    	<img src="img\giaodien\vuichoinhatrang.jpg">
+    	<br>
+    	<br>
+    	<b>Mã Tour: NDSGN500-036-210617VJ-P-1</b>
+    	<br>
+    	<b>Thời Gian: 3 Ngày </b>
+    	<br>
+    	<b>Ngày Khởi Hành: 15/6/2017</b>
+    	<br>
+    	<b>Nơi Khởi Hành: Hà Nội</b>
+    	<br>
+    	<br>
+    	<p>Mệnh danh là thành phố biển đẹp nhất Việt Nam với đường bờ biển dài, những bãi tắm đẹp, những hòn đảo hoang sơ và thơ mộng như Bình Hưng, Bình Ba, Hòn Mun, Hòn Tằm cùng hệ thống dịch vụ khách sạn và nhà hàng đa dạng và phong phú từ bình dân đến cao cấp nhất như Vinpearland Resort. Nha Trang là điểm đến phù hợp cho cả gia đình mọi thời điểm trong năm để nghỉ ngơi, thư giãn sau những ngày làm việc, học tập căng thẳng. Hãy đồng hành cùng Vietravel khám phá hành trình thú vị này bạn nhé</p>
+    	<b style="color: brown; ">DỊCH VỤ ĐI KÈM</b>
+    	<br>
+    	<br>
+    	<div class="col-md-3">
+    		<img src="img\giaodien\BaoHiem.png">
+    		<p>Bảo hiểm</p>
+    	</div>
+    	<div class="col-md-3">
+    		<img src="img\giaodien\BuaAnTheoChuongTrinh.png">
+    		<p>Bữa ăn</p>
+    	</div>
+    	<div class="col-md-3">
+    		<img src="img\giaodien\HuongDanVien.png">
+    		<p>Hướng Dãn Viên</p>
+    	</div>
+    	<div class="col-md-3">
+    		<img src="img\giaodien\XeDuaDon.png">
+    		<p>Xe Đưa Đón</p>
+    	</div>
+
+    	<b style="color: brown; ">CHƯƠNG TRÌNH TUOR</b>
+    	<br>
+    	<br>
+    	<p style="font-weight: bold; ">Ngày 1 : TP.HCM - NHA TRANG - IRESORT Số bữa ăn : 02 bữa (trưa, chiều)</p>
+        <img src="img\giaodien\canhnhatrang.jpg">
+        <p>Quý khách tập trung tại cột số 04 (nếu bay Vietjet Air) hoặc cột số 10 (nếu bay Vietnam Airlines, Jetstars) ga đi Trong Nước - Sân bay Tân Sơn Nhất, hướng dẫn viên làm thủ tục cho Quý khách đáp chuyến bay đi Nha Trang. Đến Cam Ranh, Quý khách di chuyển vào trong Trung tâm Thành phố Nha Trang để đi ăn trưa. Sau đó, xe Vietravel sẽ đưa Quý khách tham quan và thư giãn tại Trung tâm suối khoáng nóng I-Resort - Với không gian yên tĩnh, cây cối xanh tươi, I-Resort sẽ hiện ra như một bức tranh thiên nhiên đậm chất Việt, khu du lịch được bao bọc bởi dáng núi hùng vĩ, bên dòng sông Cái thơ mộng sơn thuỷ hữu tình không đâu có được đem đến cho Quý khách những trải nghiệm mới về cuộc sống với dịch vụ tắm khoáng độc đáo sẽ tạo cho du khách cảm giác thật thoải mái và thư giãn. Đặc biệt từ mùa hè 2016 Quý khách tham quan I-resort còn có cơ hội vui chơi giải trí tại Công Viên Suối Khoáng Nóng I-Resort - Là công viên nước khoáng đầu tiên và duy nhất tại Việt Nam, có hệ thống thác nước khoáng to lớn hùng vĩ cùng nhiều trò chơi nước độc đáo, nằm trải dài bên bờ sông Cái thơ mộng. Công viên nước khoáng I Resort Nha Trang hứa hẹn mang tới cho bạn cảm giác sảng khoái cùng sự hài lòng tuyệt đối. (Chi phí vui chơi tại công viên tự túc). Quý khách tiếp tục ra cảng cầu đá, sang nhận phòng tại Khu nghỉ dưỡng cao cấp Vinpearl Resort 5 sao Được mệnh danh là “Viên ngọc trai lấp lánh trên vương miện của nữ hoàng biển khơi”. Sau khi nhận phòng khách sạn, Quý khách tự do nghỉ ngơi tắm biển tại bãi tắm tự nhiên dài 700m đẹp nhất Nha Trang cùng hệ thống bể bơi ngoài trời hiện đại rộng nhất Đông Nam Á (diện tích hơn 5.700 m2). Quý khách dùng bữa chiều buffet thịnh soạn gồm nhiều món ăn mang đậm hương vị Á - Âu tại một trong những nhà hàng sang trọng bậc nhất tại Vinpearl. Nghỉ đêm tại resort.
+        </p>
+
+        <p style="font-weight: bold; ">Ngày 2 : NHA TRANG - VINPEARL RESORT 5* Số bữa ăn : 03 bữa (sáng, trưa, chiều)</p>
+        <img src="img\giaodien\biennhatrang.jpg" style="width: 100%; ">
+        <p>Sau khi dùng buffet sáng, Quý khách tự do nghỉ ngơi, tắm biển hay mua vé tham quan Khu vui chơi giải trí Vinpearl Land (chi phí tự túc) - Được xây dựng trên diện tích gần 200.000m2, bao gồm nhiều công trình hiện đại, đặc sắc, đẳng cấp quốc tế với hệ thống cáp treo vượt biển dài nhất thế giới (3.320m), thỏa sức mua sắm tại dãy phố mua sắm rộng hơn 6.000m2, vui chơi thỏa thích tại Khu công viên nước rộng 60.000m2 với nhiều trò chơi mạo hiểm kỳ thú, quý khách cùng nhau tham gia các trò chơi ngoài trời: Quay Nhào Lộn, Đu Quay Ngựa Gỗ, Tàu Lượn, khám phá Thủy cung Vinpearl với gần 300 loài sinh vật biển và 90m đường ngầm dưới nước…Ngoài ra Quý khách còn có thể tham quan Chùa Trúc Lâm một công trình kiến trúc tôn giáo mới toạ lạc ngay trên đảo Hòn Tre. Ngoài ra, Qúy khách còn được tham gia các trò chơi trong nhà như : xe điện đụng, cưỡi bò tót, Phim 4D. Sau đó, Quý khách có thể thưởng thức chương trình biểu diễn Nhạc Nước Hiện Đại độc đáo với những bản nhạc mang đặc trưng của nhiều nền văn hóa trên khắp thế giới cùng hiệu ứng laser sống động. Ăn trưa & ăn chiều buffet tại Vinpearl.  Nghỉ đêm tại Vinpearl. 
+       </p>
+
+       <p style="font-weight: bold; "> Ngày 3 : NHA TRANG - WHITE SAND DỐC LẾT – TPHCM Số bữa ăn : 02 bữa (sáng, trưa)</p>
+       <img src="img\giaodien\anhdulichnt.jpg">
+       <p>Sau khi dùng bữa sáng tại khách sạn, xe Vietravel đưa Qúy khách tham quan Khu du lịch White Sand Dốc Lết - Được thiết kế bằng bãi cỏ xanh ngát và hàng dừa đặc trưng của vùng biển, nơi mà ánh nắng mặt trời, cát trắng và phong cảnh đã hòa quyện vào nhau để làm nên một khung cảnh thơ mộng cho khu du lịch cao cấp này. Quý khách tự do tắm biển, tham gia các trò chơi trên biển: Môtô nước, dù lượn, trượt nước, ván buồm... hay thưởng thức hải sản (chi phí tự túc). Dùng bữa trưa, sau đó trả phòng khách sạn. Tiếp tục xe đưa đoàn tham quan và mua đặc sản tại chợ Đầm. Đoàn ra sân bay Cam Ranh đón chuyến bay về Tp.HN. Đến nơi, chia tay Quý khách và kết thúc chương trình du lịch tại sân bay Tân Sơn Nhất. 
+       </p>
+       <br>
+       <br>
+       <center><a href="dattour.html"><button style="font-weight: bold; background-color: tan; height: 50px; width: 100px ">ĐẶT NGAY</button></a></center>
+    </div>
+
+    <div class="col-md-4">
+    	<div class="tomtattour">
+    		<h4 style="font-weight: bold; color: brown; ">TÓM TẮT CHƯƠNG TRÌNH TOUR</h4>
+    		<br>
+    		<br>
+    		<h5 style="border-bottom: 2px solid #9E9E9E ;padding-bottom: 10px; ">Ngày 1 : TP.HN - NHA TRANG - IRESORT Số bữa ăn : 02 bữa (trưa, chiều)</h5>
+    		<br>
+    		<h5 style="border-bottom: 2px solid #9E9E9E ;padding-bottom: 10px; ">Ngày 2 : NHA TRANG - VINPEARL RESORT 5* Số bữa ăn : 03 bữa (sáng, trưa, chiều)</h5>
+    		<br>
+    		<h5 style="border-bottom: 2px solid #9E9E9E ;padding-bottom: 10px; ">Ngày 3 : NHA TRANG - WHITE SAND DỐC LẾT – TPHCM Số bữa ăn : 02 bữa (sáng, trưa)</h5>
+            <br>
+            <br>
+    		<center><a href="dattour.html"><button style="font-weight: bold; background-color: tan; height: 50px; width: 100px ">ĐẶT NGAY</button></a></center>
+    		<br>
+    		<br>
+    		<img src="img\giaodien\dlnt.jpg" style="width: 430px; ">
+    		<img src="img\giaodien\hinh-anh-dep-nha-trang-10.jpg" style="width: 430px; margin-top: 100px; ">
+    		<img src="img\giaodien\Hoang_yen_Buffet_Am_thuc_Nha_Trang_04.jpg" style="width: 430px; margin-top: 100px; ">
+    		<img src="img\giaodien\du-lich-nha-trang11.jpg" style="width: 430px; margin-top: 100px; ">
+    		<img src="img\giaodien\am-thuc-cung-dinh-hue.jpg" style="width: 430px; margin-top: 100px; ">
+    		<img src="img\giaodien\images.jpg" style="width: 430px; margin-top: 100px; ">
+
+    	</div>
+    </div>
+</div>
+
+
+<div class="col-md-12" style=" background-color: #f7f7f7" >
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU Á</a></h5></center>
+    <center><a href="#"><p> Du lich Việt Nam</p></a></center>
+    <center><a href="#"><p> Du lich Nhật Bản</p></a></center>
+    <center><a href="#"><p> Du lich Hàn Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Trung Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Thái Lan</p></a></center>
+    <center><a href="#"><p> Du lich Indonexia</p></a></center>
+    <center><a href="#"><p> Du lich Malayxia</p></a></center>
+  </div>
+  
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU ÂU</a></h5></center>
+    <center><a href="#"><p> Du lich Pháp</p></a></center>
+    <center><a href="#"><p> Du lich Thụy Sĩ</p></a></center>
+    <center><a href="#"><p> Du lich Ý</p></a></center>
+    <center><a href="#"><p> Du lich Vatican</p></a></center>
+    <center><a href="#"><p> Du lich Monaco</p></a></center>
+    <center><a href="#"><p> Du lich Bỉ</p></a></center>
+    <center><a href="#"><p> Du lich Hà Lan</p></a></center>
+  </div>
+
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU PHI </a></h5></center>
+    <center><a href="#"><p> Du lich Nam Phi  </p></a></center>
+    <center><a href="#"><p> Du lich Kenya </p></a></center>
+    <center><a href="#"><p> Du lich Mauritius </p></a></center>
+    <center><a href="#"><p> Du lich Cape Town </p></a></center>
+    <center><a href="#"><p> Du lich Pretoria </p></a></center>
+    <center><a href="#"><p> Du lich Abu Dhabi </p></a></center>
+    <center><a href="#"><p> Du lich Johannesburg</p></a></center>
+  </div>
+
+   <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU MỸ</a></h5></center>
+    <center><a href="#"><p> Du lich Mỹ</p></a></center>
+    <center><a href="#"><p> Du lich Canada</p></a></center>
+    <center><a href="#"><p> Du lich Brazil</p></a></center>
+    <center><a href="#"><p> Du lich Cuba</p></a></center>
+    <center><a href="#"><p> Du lich Mexico</p></a></center>
+    <center><a href="#"><p> Du lich Nam Mỹ</p></a></center>
+    
+  </div>
+
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU ÚC</a></h5></center>
+    <center><a href="#"><p> Du lich New Zealand</p></a></center>
+    <center><a href="#"><p> Du lich ÚC</p></a></center>
+    <center><a href="#"><p> Du lich Sydney</p></a></center>
+    
+  </div>
+</div>
+
+<div class="menuphu">
+    <div class="col-md-12" style="background-color: darkblue; margin-top: 20px; ">
+      <div class="col-md-3">
+        <center><a href="#"><h5 style="color: white; ">ƯU ĐÃI NHẤT</h5></a></center>
+      </div>
+
+      <div class="col-md-3">
+        <center><a href="#"><h5 style="color: white; ">DỊCH VỤ</h5></a></center>
+      </div>
+
+      <div class="col-md-3">
+        <center><a href="#" style="color: white; "><h5>KHÁCH SẠN</h5></a></center>
+      </div>
+
+      <div class="col-md-3">
+        <center><a href="#" style="color: white; "><h5>ẨM THỰC</h5></a></center>
+      </div>
+    </div> 
+   </div>
+
+   <div class="col-md-12" style="background-color: rgba(162, 184, 214, 0.47); color: #337ab7;padding-top: 30px;">
+    	 
+    	 <div class="col-md-4 ">
+    	 	<div class="lienhe">
+    	 		<center ><img src="img\giaodien\hinhanhcat\discover.png"></center>
+    	 		<br>
+    	 		<p>Đến với chúng tôi,bạn sẽ được tận hưởng những dịch vụ du lịch tốt nhất cùng gia đình và người thân yêu.Đối với chúng tôi,mỗi khách hàng đề là thượng đế.Hãy để chúng tối nâng niu những phút giây thư giãn của bạn</p>
+    	 		<p><a href="#"><img src="img\giaodien\hinhanhcat\discove.png" ></a>Tam Trinh-Hoàng Mai-Hà Nội</p>
+                <p><a href="#"><img src="img\giaodien\hinhanhcat\discr.png"></a>+08 0123 456 789</p>
+                <p><a href="#"><img src="img\giaodien\hinhanhcat\hahar.png" ></a>discovertravel@gmail.com</p>
+                <p><a href="#"><img src="img\giaodien\hinhanhcat\dver.png"></a>discovertravel@world.com</p>
+    	 	</div>
+    	 </div>
+    	 <div class="col-md-4">
+    	 	<br>
+    	 	<center ><h5><a href="#">THÔNG TIN CẦN BIẾT</a></h5></center>
+    	 	<br>
+    	 	<br>
+    	 	<p> <a href="#">Điều khoản và điều kiện</a></p>
+    	 	<br>
+    	 	<p> <a href="#">Chính sách riêng tư</a></p>
+    	 	<br>
+    	 	<p><a href="#">Câu hỏi thường gặp</a></p>
+    	 </div>
+
+    	 <div class="col-md-4">
+    	 	<div class="phanhoi">
+        <br>
+       <center><h5> LIÊN HỆ</h5></center>
+       <form role="form" style="width: 50%;margin: auto;">
+  <div class="form-group">
+    <label>Họ và Tên</label>
+    <input type="text" name="ten" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Nội Dung</label>
+    <input type="text" name="noidung" class="form-control">
+  </div>
+  
+  <input type="submit" class="btn btn-primary" value="Gửi">
+</form>
+     </div>
+    	 </div>
+
+
+
+    </div>	
+
+
+</body>
+</html>
