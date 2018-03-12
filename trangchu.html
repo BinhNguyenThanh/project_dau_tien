@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=""></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	body{
+		padding:0px;
+	    margin:0px;
+	}
+
+	#menu {
+		padding-top: 10px;
+		height: 97px;
+		width: 100%;
+  display: block;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+	}
+
+	#menu1
+	   {
+	   float:left;
+	   text-align:center;
+	   padding-bottom:35px;
+	   padding-left: 35px;
+	   margin-top: 20px;
+	  }
+	   #menu2{
+	   overflow:hidden;
+       margin-top: 36px;
+	   }
+	    #menu ul{
+	   list-style-type:none;
+	   margin: 0;
+  padding: 0;
+	   }	   
+	   #menu ul li
+	   {
+	   line-height:28px;
+	   text-align:center;
+	   padding-right:30px;
+	   padding-top:4px;
+	   padding-left: 28px;
+	   list-style:none inside;
+  width: auto;
+  float: left; 
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+	   }
+	  
+	   #menu ul li a
+	   {
+	   	font-family: 'Arizonia';
+	   text-decoration:none;
+	   color:black;
+	     text-transform: uppercase;
+         white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+         padding: 0 10px;
+        text-transform: uppercase;  
+        display: block;
+       
+	   }
+	   #menu ul li a:hover{
+	   	color: white;
+	    background-color: #85d486;
+	   }
+
+/* Slideshow container */
+.slideshow-container {
+	padding-top: 100px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	   .hinh1{
+	   width:50%;
+	   float:left;
+	   background-color:white;
+	   }
+	   .a{float:left;
+	     width:45%;
+		 margin-bottom;
+	   }
+	   .b{float:right;
+	     width:55%;
+		 color:black;
+		 
+		 
+	   }
+	   .hinh2{
+	   width:50%;
+	   float:right;
+	   background-color:while;
+	   } 
+      .anhto1{
+	   float:left;
+	   overflow:hidden;
+	   height:428px;
+	   }
+	  
+	  .anhto2{
+	  float:right;
+	  background-color:rgba(158, 158, 158, 0.08);
+	  height:409px;
+	 } 
+	 .dichvu1{
+	 float:left;
+	 width:50%
+	}
+	.hinhdv1{
+	margin-left:40px;
+	}
+	.hadv{
+	width:25%;
+	}
+	.ttdv{
+	width:75%;
+	}
+	.dichvu2{
+	float:right;
+	width:50%;
+	} 
+    .Group3{
+	width:100%;
+	}	
+    .Group3 ul li{
+	float:left;
+	list-style:none;
+	overflow:hidden;
+	}
+    .Group4 ul li {
+    	list-style: none;
+    }
+
+    .Group5 ul li {
+    	list-style: none;
+    }
+	
+	   </style>
+</head>
+
+<body>
+    <div class="col-md-12">
+	<div id="menu">
+	    <div class="col-md-3">
+		<div id="menu1">
+			<center><img src="img\giaodien\hinhanhcat\discover.png"></center>
+		</div>
+		</div>
+		<div class="col-md-9">
+		<div id="menu2">
+				<ul>
+				  <li><a href="trangchu.html"> <b> TRANG CHỦ</b></a></li>
+				  <li><a href="trangmat.html"><b> TOUR TRĂNG MẬT</b></a></li>
+				  <li><a href="trongnuoc.html"><b>TOUR TRONG NƯỚC</b></a></li>
+				  <li><a href="nuocngoai.html"><b>TOUR NƯỚC NGOÀI</b></a></li>
+				  <li><a href="#"><b>LIÊN HỆ</b></a></li>
+				</ul>
+		</div>
+		</div>
+    </div>
+	</div>
+ 
+
+   <div class="Group1"> 
+   <div class="col-md-12">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="img\giaodien\anhnendulich.jpg" style="width:100%; height:500px ">
+              <div class="text">Caption Text</div>
+           </div>
+
+           <div class="mySlides fade">
+              <img src="img\giaodien\anhdulich.jpeg" style="width:100% ; height:500px">
+              <div class="text">Caption Two</div>
+           </div>
+
+           <div class="mySlides fade">
+                  <img src="img\giaodien\phu-quoc.jpg" style="width:100% ; height:500px">
+                  <div class="text">Caption Three</div>
+            </div>
+           
+           <div class="mySlides fade">
+                  <img src="img\giaodien\bien.jpg" style="width:100% ; height:500px">
+                  <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                  <img src="img\giaodien\Khachsan.jpg" style="width:100% ; height:500px">
+                  <div class="text">Caption Three</div>
+            </div>
+       </div>
+    <br>
+
+            <div style="text-align:center">
+                   <span class="dot"></span> 
+                 <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+            </div>
+    </div>
+
+<script> //cài đặt chạy slide
+var slideIndex = 0;
+showSlides(); 
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1500); // Change image every 2 seconds   //kết thúc cài đặt slide
+}
+</script>
+
+
+       <div class="col-md-12"><center><h1 style="color:green; text-decoration:none;">ƯU ĐÃI NHẤT</h1></center></div>
+    <div class="col-md-12"><center><img src="img\giaodien\hinhanhcat\cba.png"></center></div>
+     
+   <div id="hinh3">
+<div class ="col-md-12" style="margin-top: 40px;">
+  <div class="col-md-6" >
+
+
+
+
+
+    <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+      <img src="img\giaodien\hinhanhcat\mocchau1.jpg">
+    </div>
+    <div class="col-md-7" style=" height: 200px;;">
+       <h4>HOA ĐÀO SAPA</h4>
+           <p>Giữa tháng 3, du khách lên vùng cao Sa Pa, Bát Xát sẽ có cơ hội ngắm những gốc đào cổ thụ đua nhau nở rộ, đỏ thắm trên những ngọn núi cao hay các bản làng.Hoa đào phai nở muộn khiến vùng cao Bát Xát vẫn tràn đầy sức xuân.Vẻ đẹp mang đậm vùng cao Tây Bắc.Du khách lên vùng cao thời điểm này sẽ được ngắm hoa đào nở đẹp nhất.</p>
+           <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+      <img src="img\giaodien\hinhanhcat\dir.jpg">
+    </div>
+    <div class="col-md-7" style=" height: 200px;">
+           <h4>RUỘNG BẬC THANG</h4>
+           <p>Đây là mùa đẹp nhất ở vùng núi cao Sa Pa, Lào Cai. Những cánh đồng ruộng bậc thang như những chiếc thang trời ở các bản làng Trung Chải, Sa Pả, Tả Phìn, Lao Chải, Nậm Cang, Tả Van, Hầu Thào..., luôn là điểm đến hấp dẫn đối với du khách trong và ngoài nước</p>
+           <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <div id="hinh4">
+<div class ="col-md-12" style="margin-top: 40px;">
+  <div class="col-md-6" >
+    <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+      <img src="img\giaodien\hinhanhcat\abcr.jpg">
+    </div>
+    <div class="col-md-7" style=" height: 200px;;">
+            <h4>HỘI AN</h4>
+            <p>Ngoài những giá trị văn hoá qua kiến trúc đa dạng, Hội An còn lưu giữ một nền tảng văn hoá phi vật thể khá đồ sộ. Cuộc sống thường nhật của cư dân với những phong tục tập quán, sinh hoạt tín ngưỡng, nghệ thuật dân gian, lễ hội văn hoá cùng với cảnh quan thiên nhiên thơ mộng, các món ăn đặc sản… làm cho Hội An ngày càng hấp dẫn du khách thập phương.</p>
+           <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5" style=" height: 200px;overflow: hidden;">
+      <img src="img\giaodien\hinhanhcat\lge.jpg">
+    </div>
+    <div class="col-md-7" style=" height: 200px;">
+            <h4>MÙA ĐÔNG MỘC CHÂU</h4>
+            <p>Ở MỘC CHÂU người ta chồng cải để thu hoạch hạt cải già bán cho các cơ sở ép dầu,bất cứ chỗ nào có đất là người ta gieo.Chính vì vậy khi nở hoa cải sẽ bung ra hàng loạt theo từng cánh đồng,biến nơi đây trở thành 1 thiên đường đúng nghĩa giữa lưng chừng mây vậy</p>
+           <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+  </div>
+  </div>
+</div>  
+    
+
+ <div class="col-md-12" style="margin-top: 30px;">
+     <div class="col-md-6">
+      <div class="anhto1" >
+        <a href="#"><img src="img\giaodien\nhatrang.jpg" style="margin-top:20px ; width:682px ;height: 428px "></a>
+      </div>
+      </div>
+     
+     <div class="col-md-6">
+      <div class="anhto2" style="margin-top:20px">
+          <center><h1 style="color:green;"> DỊCH VỤ</h1></center>
+		  <div class="dichvu1">
+		    <div class="hinhdv1">
+		          <div class="hadv"><center><img src="img\giaodien\hinhanhcat\discver.png"></center></div>
+			      <div class="ttdv">
+			          <p>Luôn có những lịch trình mới và hấp dẫn dành cho các bạn.Không phải lo về thời gian lịch trình làm ảnh hưởng tới công việc.</p>
+			      </div>
+			</div>  
+			<div class="hinhdv1">
+		         <div class="hadv"><center><img src="img\giaodien\hinhanhcat\disc.png"></center></div>
+				 <div class="ttdv">
+				    <p>Nếu có rắc rối,bạn có thể đổi ngay lịch trình mới của chứng tôi để phù hợp.Chúng tôi luôn giúp đỡ bạn hết mình,để bạn có những phút giây thư giãn nhất</p>
+			     </div>
+		    </div>
+          </div>
+		  <div class="dichvu2">
+		      <div class="hinhdv1">
+		         <div class="hadv"><center><img src="img\giaodien\hinhanhcat\dir.png"></center></div>
+				 <div class="ttdv">
+				   <p>Những địa điểm cuốn hút của chúng tôi luôn có những món ăn hấp dẫn.Và tất nhiên rồi,Mọi đặc sản ở đó,chúng tôi đẩm bảo với bạn là vô cùng an toàn.</p>
+				 </div>
+			  </div>
+              <div class="hinhdv1">
+			       <div class="hadv"><center><img src="img\giaodien\hinhanhcat\disr.png"></center></div>
+				   <div class="ttdv">
+				        <p>Chúng tôi cung cấp những dịch vụ khách sạn tuyệt vời nhất,sang trọng nhất với giá phải chăng.An ninh luôn được đảm bảo.Quý khách hàng sẽ vô cùng yên tâm với dịch vụ của chúng tôi.</p>
+                   </div>			  
+		       </div>
+		 
+          </div>
+	 </div>
+	 </div>
+
+</div>
+
+
+ <div class="Group3" style="overflow:hidden;">
+    <div>  
+	  <div class="col-md-12"><center><h2 style="color:green;">TOUR</h2></center></div>
+	  <div class="col-md-12"><center><img src="img\giaodien\hinhanhcat\cba.png"></center></div>
+    </div>
+  </div>  
+  	   	   	 	
+ <div class="Group4">
+      
+     <ul>
+	   <div class="col-md-3"> 
+	         <li><a href="tourNhatrang.html"><img src="img\giaodien\dulichnhatrang.jpg" style="    height: 225px;
+    width: 297px "></a></li> 
+       <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR NHA TRANG</p></center>
+       <h5 style="color:#2496cc">GIÁ:10,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:15/6/2017</h5>
+      <center><a href="tourNhatrang.html"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+    </div>
+	    <div class="col-md-3"><li><a href="#"><img src="img\giaodien\vịnh hạ long.jpg" style=" height: 225px;
+    width: 297px;"></a></li>
+      <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color:#e91e63 ; font-weight:  " >TUOR HẠ LONG</p></center>
+       <h5 style=" color: #2496cc">GIÁ:15,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:15/6/2017</h5>
+       <center><a href="#"><button  style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+    </div>
+		<div class="col-md-3"><li><a href="#"><img src="img\giaodien\bắc cạn.jpg" style=" height: 225px;
+    width: 297px;"></a></li>
+     <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR ĐÔNG BẮC</p> </center>
+       <h5 style=" color: #2496cc">GIÁ:8,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:15/6/2017</h5>
+       <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: " >XEM THÊM</button></a></center>
+    </div>
+   </div>
+	   <div class="col-md-3"><li><a href="#"><img src="img\giaodien\sa-pa1.jpg" style=" height: 225px;
+    width: 297px;"></a></li>
+     <div style=" background-color: #f7f7f7; ">
+      <center><p style=" color: #e91e63; font-weight:">TOUR SA PA</p></center>
+        <h5 style=" color: #2496cc">GIÁ:10,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:12/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+    </div>
+  </ul>
+  </div> 
+
+
+  <div class="Group5">
+    <ul>
+		 <div class="col-md-3"><li><a href="#"><img src="img\giaodien\SOEUL.jpg" style=" margin-top: 100px;  height: 258px; width:297px;" ></a></li>
+          <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR SOEUL-HÀN QUỐC</p></center>
+       <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:20/6/2017</h5>
+     <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+		 <div class="col-md-3"><li><a href="#"><img src="img\giaodien\tf_160811_Grand-Palace.jpg"  style=" margin-top: 100px; width: 297px; height: 258px; "></a></li>
+<div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR THÁI LAN</p></center>
+       <h5 style="color:#2496cc">GIÁ:12,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 4 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:17/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+		 <div class="col-md-3"><li><a href="#"> <img src="img\giaodien\Mexico.jpg" style=" margin-top: 100px; width: 297px; height: 258px; " ></a></li>
+          <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR MEXICO</p></center>
+       <h5 style="color:#2496cc">GIÁ:22,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 5 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:18/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+          </div>
+		 </div>
+		 <div class="col-md-3"><li> <a href="#"><img src="img\giaodien\sigapo.jpg" style=" margin-top: 100px; width: 297px ; height: 258px; "></a></li>
+            <div style=" background-color: #f7f7f7; ">
+       <center><p style=" color: #e91e63; font-weight:">TOUR SINGAPO</p></center>
+       <h5 style="color:#2496cc">GIÁ:20,000,000 vnđ</h5>
+       <h5 style=" color: #2496cc ">THỜI GIAN: 3 Ngày</h5>
+       <h5 style=" color: #2496cc ">NGÀY KHỞI HÀNH:21/6/2017</h5>
+      <center><a href="#"><button style="color: white; background-color: #00BCD4; font-weight: ">XEM THÊM</button></a></center>
+    </div>
+		 </div>
+	 
+	 </ul>
+	    
+</div>
+
+ 
+ <div class="col-md-12" style=" background-color: #f7f7f7 ; margin-top:20px;" >
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU Á</a></h5></center>
+    <center><a href="#"><p> Du lich Việt Nam</p></a></center>
+    <center><a href="#"><p> Du lich Nhật Bản</p></a></center>
+    <center><a href="#"><p> Du lich Hàn Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Trung Quốc</p></a></center>
+    <center><a href="#"><p> Du lich Thái Lan</p></a></center>
+    <center><a href="#"><p> Du lich Indonexia</p></a></center>
+    <center><a href="#"><p> Du lich Malayxia</p></a></center>
+  </div>
+  
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU ÂU</a></h5></center>
+    <center><a href="#"><p> Du lich Pháp</p></a></center>
+    <center><a href="#"><p> Du lich Thụy Sĩ</p></a></center>
+    <center><a href="#"><p> Du lich Ý</p></a></center>
+    <center><a href="#"><p> Du lich Vatican</p></a></center>
+    <center><a href="#"><p> Du lich Monaco</p></a></center>
+    <center><a href="#"><p> Du lich Bỉ</p></a></center>
+    <center><a href="#"><p> Du lich Hà Lan</p></a></center>
+  </div>
+
+  <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU PHI </a></h5></center>
+    <center><a href="#"><p> Du lich Nam Phi  </p></a></center>
+    <center><a href="#"><p> Du lich Kenya </p></a></center>
+    <center><a href="#"><p> Du lich Mauritius </p></a></center>
+    <center><a href="#"><p> Du lich Cape Town </p></a></center>
+    <center><a href="#"><p> Du lich Pretoria </p></a></center>
+    <center><a href="#"><p> Du lich Abu Dhabi </p></a></center>
+    <center><a href="#"><p> Du lich Johannesburg</p></a></center>
+  </div>
+
+   <div class="col-md-2">
+    <center><h5><a href="#">DU LỊCH CHÂU MỸ</a></h5></center>
+    <center><a href="#"><p> Du lich Mỹ</p></a></center>
+    <center><a href="#"><p> Du lich Canada</p></a></center>
+    <center><a href="#"><p> Du lich Brazil</p></a></center>
+    <center><a href="#"><p> Du lich Cuba</p></a></center>
+    <center><a href="#"><p> Du lich Mexico</p></a></center>
+    <center><a href="#"><p> Du lich Nam Mỹ</p></a></center>
+    
+  </div>
+
+   <div class="col-md-3">
+    <center><h5><a href="#">DU LỊCH CHÂU ÚC</a></h5></center>
+    <center><a href="#"><p> Du lich New Zealand</p></a></center>
+    <center><a href="#"><p> Du lich ÚC</p></a></center>
+    <center><a href="#"><p> Du lich Sydney</p></a></center>
+    
+  </div>
+</div>
+
+   <div class="menuphu">
+   	<div class="col-md-12" style="background-color: darkblue; margin-top: 20px; ">
+   		<div class="col-md-3">
+   			<center><a href="#"><h5 style="color: white; ">ƯU ĐÃI NHẤT</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#"><h5 style="color: white; ">DỊCH VỤ</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#" style="color: white; "><h5>KHÁCH SẠN</h5></a></center>
+   		</div>
+
+   		<div class="col-md-3">
+   			<center><a href="#" style="color: white; "><h5>ẨM THỰC</h5></a></center>
+   		</div>
+   	</div> 
+   </div>
+    
+    <div class="col-md-12" style="background-color: rgba(162, 184, 214, 0.47); color: #337ab7;padding-top: 30px;">
+
+    <div class="col-md-4">
+      <div class="lienhe">
+        <center><img src="img\giaodien\hinhanhcat\discover.png"/></center>
+        <br>
+       <p>Đến với chúng tôi,bạn sẽ được tận hưởng những dịch vụ du lịch tốt nhất cùng gia đình và người thân yêu.Đối với chúng tôi,mỗi khách hàng đề là thượng đế.Hãy để chúng tối nâng niu những phút giây thư giãn của bạn</p>
+         <p><a href="#"><img src="img\giaodien\hinhanhcat\discove.png" ></a>Tam Trinh-Hoàng Mai-Hà Nội</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\discr.png"></a>+08 0123 456 789</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\hahar.png" ></a>discovertravel@gmail.com</p>
+       <p><a href="#"><img src="img\giaodien\hinhanhcat\dver.png"></a>discovertravel@world.com</p>
+      </div>
+    </div>
+
+
+   <div class="col-md-4">
+     <div class="gioithieu">
+        <br>
+       <center><h5><a href="#"> THÔNG TIN CẦN BIẾT </a></h5></center>
+       <br>
+       <br>
+       <p><a href="#">Điều khoản và điều kiện</a></p>
+       <br>
+       <p><a href="#">Chính sách riêng tư</a></p>
+       <br>
+       <p><a href="#">Câu hỏi thường gặp</a></p>
+     </div>
+   </div>
+
+
+   <div class="col-md-4">
+     <div class="phanhoi">
+        <br>
+       <center><h5> LIÊN HỆ</h5></center>
+     <form role="form" style="width: 50%;margin: auto;">
+  <div class="form-group">
+    <label>Họ và Tên</label>
+    <input type="text" name="ten" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Nội Dung</label>
+    <input type="text" name="noidung" class="form-control">
+  </div>
+  
+  <input type="submit" class="btn btn-primary" value="Gửi">
+</form>
+      
+     </div>
+   </div>
+   </div>
+
+</body>
+</html>
